@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/gloHint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/GlossTableAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/depth_bg"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="A"
+                        app:rightText=".-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="B"
+                        app:rightText="-..." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="C"
+                        app:rightText="-.-." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="D"
+                        app:rightText="-.." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="E"
+                        app:rightText="." />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="F"
+                        app:rightText="..-." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="G"
+                        app:rightText="--." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="H"
+                        app:rightText="...." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="I"
+                        app:rightText=".." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabJ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="J"
+                        app:rightText=".---" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="*">
+
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="K"
+                        app:rightText="-.-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="L"
+                        app:rightText=".-.." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="M"
+                        app:rightText="--" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="N"
+                        app:rightText="-." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="O"
+                        app:rightText="---" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="P"
+                        app:rightText=".--." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="Q"
+                        app:rightText="--.-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="R"
+                        app:rightText=".-." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="S"
+                        app:rightText="..." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="T"
+                        app:rightText="-" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="U"
+                        app:rightText="..-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="V"
+                        app:rightText="...-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="W"
+                        app:rightText=".--" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="X"
+                        app:rightText="-..-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="Y"
+                        app:rightText="-.--" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tabZ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="Z"
+                        app:rightText="--.." />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/GlossTableNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:background="@drawable/depth_bg"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/row7"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="1"
+                        app:rightText=".---" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="2"
+                        app:rightText="..---" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="3"
+                        app:rightText="...--" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="4"
+                        app:rightText="....-" />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="5"
+                        app:rightText="....." />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*">
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="6"
+                        app:rightText="-...." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="7"
+                        app:rightText="--..." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="8"
+                        app:rightText="---.." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="9"
+                        app:rightText="----." />
+
+                    <com.landofai.morsecode.CustomView
+                        android:id="@+id/tab0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        app:leftText="0"
+                        app:rightText="-----" />
+
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

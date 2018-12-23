@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Morse Code</string>
+
+    <array name="menuOptions">
+        <item>Glossary</item>
+        <item>Convert</item>
+        <item>About</item>
+        <item>Rate us</item>
+        <item>Feedback</item>
+    </array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">About and Contact</string>
+    <string name="conv">Convert</string>
+    <string name="gloss">Glossary</string>
+    <string name="gloHint">(Tap on any Key to Play Sound)</string>
+    <string name="convert">Convert</string>
+    <string name="txtHint">Enter English Text</string>
+    <string name="rset">Reset</string>
+    <string name="play">Play</string>
+    <string name="light">Flash</string>
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="stopButton">Stop</string>
+</resources>
