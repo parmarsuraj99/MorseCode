@@ -28,4 +28,8 @@
     <string name="sound">Sound</string>
     <string name="vibrate">Vibrate</string>
     <string name="stopButton">Stop</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3610318629951855/7407122088</string>
+    <string name="footer_greet">Thank you!</string>
+    <string name="header_name">Morse Code</string>
 </resources>

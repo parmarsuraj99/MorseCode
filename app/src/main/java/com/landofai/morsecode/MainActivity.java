@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity implements DuoMenuView.OnMen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        DuoMenuView menu_drawer = findViewById(R.id.menu_expanded);
+
+
         mTitles = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.menuOptions)));
 
         // Initialize the views
@@ -98,8 +104,7 @@ public class MainActivity extends AppCompatActivity implements DuoMenuView.OnMen
         mMenuAdapter.setViewSelected(position, true);
 
         // Navigate to the right fragment
-
-        Fragment fragment=null;
+        Log.d("Position: ", "choice"+position );
 
         switch (position) {
 
@@ -108,7 +113,9 @@ public class MainActivity extends AppCompatActivity implements DuoMenuView.OnMen
             case 1:
                 goToFragment(new Menu2(), false);
                 break;
-
+            case 4:
+                goToFragment(new FeedbackFragment(), false);
+                break;
             default:
                 goToFragment(new Menu1(), false);
                 break;

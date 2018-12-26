@@ -22,6 +22,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import static android.content.ContentValues.TAG;
 import static android.content.Context.VIBRATOR_SERVICE;
 
@@ -54,6 +57,8 @@ public class Menu2 extends Fragment{
     boolean toSound, toFlash, toVibrate;
     boolean isplaying=false;
     boolean toContinue=true;
+
+    private AdView mAdView;
 
     Thread t1;
 
@@ -145,6 +150,9 @@ public class Menu2 extends Fragment{
         flash.setVisibility(View.INVISIBLE);
 
 
+        mAdView = (AdView) getView().findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     public void resetAll(){
